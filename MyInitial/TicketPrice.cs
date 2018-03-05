@@ -16,6 +16,8 @@ namespace Ticketing
         const decimal mdecBalcony = 35.5m;
         const decimal mdecGeneral = 28.75m;
         const decimal mdecBox = 62.0m;
+        const decimal mdecDiscount = 5.0m;
+        const decimal mdecBackStall = 15.0m;
         const decimal mdecDiscounts = 5.0m;
         const decimal mdecDiscountc = 10.0m;
 
@@ -51,6 +53,7 @@ namespace Ticketing
             Discount = discount;
             AmountDue = amountDue;
         }
+        // Constructor for TcicketPrice
 
         public void calculatePrice()
         {
@@ -65,6 +68,9 @@ namespace Ticketing
                     break;
                 case 3:
                     mPrice = mdecBox;
+                    break;
+                case 4:
+                    mPrice = mdecBackStall;
                     break;
             }
             if (discount == 1)

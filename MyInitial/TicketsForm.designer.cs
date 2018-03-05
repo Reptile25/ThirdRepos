@@ -38,6 +38,7 @@
             this.radBox = new System.Windows.Forms.RadioButton();
             this.grpSection = new System.Windows.Forms.GroupBox();
             this.cmdCalculate = new System.Windows.Forms.Button();
+            this.radBackStall = new System.Windows.Forms.RadioButton();
             this.chkChild = new System.Windows.Forms.CheckBox();
             this.grpSection.SuspendLayout();
             this.SuspendLayout();
@@ -120,12 +121,13 @@
             // 
             // grpSection
             // 
+            this.grpSection.Controls.Add(this.radBackStall);
             this.grpSection.Controls.Add(this.radBox);
             this.grpSection.Controls.Add(this.radGeneral);
             this.grpSection.Controls.Add(this.radBalcony);
             this.grpSection.Location = new System.Drawing.Point(52, 141);
             this.grpSection.Name = "grpSection";
-            this.grpSection.Size = new System.Drawing.Size(139, 111);
+            this.grpSection.Size = new System.Drawing.Size(139, 135);
             this.grpSection.TabIndex = 9;
             this.grpSection.TabStop = false;
             this.grpSection.Text = "Section";
@@ -139,6 +141,17 @@
             this.cmdCalculate.Text = "Calculate";
             this.cmdCalculate.UseVisualStyleBackColor = true;
             this.cmdCalculate.Click += new System.EventHandler(this.cmdCalculate_Click);
+            // 
+            // radBackStall
+            // 
+            this.radBackStall.AutoSize = true;
+            this.radBackStall.Location = new System.Drawing.Point(26, 86);
+            this.radBackStall.Name = "radBackStall";
+            this.radBackStall.Size = new System.Drawing.Size(73, 17);
+            this.radBackStall.TabIndex = 9;
+            this.radBackStall.TabStop = true;
+            this.radBackStall.Text = "Back Stall";
+            this.radBackStall.UseVisualStyleBackColor = true;
             // 
             // chkChild
             // 
@@ -186,6 +199,7 @@
         private System.Windows.Forms.RadioButton radBox;
         private System.Windows.Forms.GroupBox grpSection;
         private System.Windows.Forms.Button cmdCalculate;
+        private System.Windows.Forms.RadioButton radBackStall;
         private System.Windows.Forms.CheckBox chkChild;
     }
 }
