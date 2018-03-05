@@ -34,6 +34,7 @@ namespace Ticketing
         }
 
         private int Discount
+        private bool Discount
         {
             get { return discount; }
             set { discount = value; }
@@ -71,6 +72,20 @@ namespace Ticketing
                     break;
                 case 4:
                     mPrice = mdecBackStall;
+                    break;
+            }
+            if (discount)
+            { mPrice -= mdecDiscount; }
+            switch (section)
+            {
+                case 1:
+                    mPrice = mdecBalcony;
+                    break;
+                case 2:
+                    mPrice = mdecGeneral;
+                    break;
+                case 3:
+                    mPrice = mdecBox;
                     break;
             }
             if (discount == 1)
